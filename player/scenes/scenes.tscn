@@ -2880,10 +2880,12 @@ layer_3/tile_data = PackedInt32Array(262146, 5, 0, 65534, 5, 0, 655358, 5, 0, 72
 [node name="Player" parent="TileMap" instance=ExtResource("1_o6uly")]
 y_sort_enabled = true
 position = Vector2(-4, 3)
+knockbackPower = 300
 
 [node name="follow cam" type="Camera2D" parent="TileMap/Player" node_paths=PackedStringArray("tilemap")]
 limit_left = 0
 limit_top = 0
+position_smoothing_enabled = true
 script = ExtResource("5_g441w")
 tilemap = NodePath("../..")
 
